@@ -127,18 +127,21 @@ const Contact = () => {
               value={contact.name}
               type="text"
               required
+              placeholder="name"
             />
             <input
                  onChange={handleChange}
                  name="email"
                  value={contact.email}
                  type="email"
+                 placeholder="email"
             />
             <input
                onChange={handleChange}
                name="subject"
                value={contact.subject}
                type="text"
+               placeholder="subject"
             />
             <textarea
                   onChange={handleChange}
