@@ -1,22 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./contact.css";
-import { BsGithub, BsInstagram } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { TbArrowBigRightLine } from "react-icons/tb";
 import { AiFillLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
-import { AiOutlineTwitter } from "react-icons/ai";
-// import {RiMessengerLine} from 'react-icons/ri'
-import emailjs from "emailjs-com";
 import axios from "axios";
 
 const Contact = () => {
-  // const form = useRef();
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_pgizsiu', 'template_r33jszj', form.current, '2FDb7VyuxniZlBgCg')
-  //     e.target.reset()
-  // };
-
   const [contact, setContact] = useState({
     name: "",
     email: "",
@@ -99,6 +88,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
+            
             <div className="card">
               <div>
                 <AiOutlineWhatsApp className="icon instaIcon" />
@@ -130,26 +120,31 @@ const Contact = () => {
               placeholder="name"
             />
             <input
-                 onChange={handleChange}
-                 name="email"
-                 value={contact.email}
-                 type="email"
-                 placeholder="email"
+              onChange={handleChange}
+              name="email"
+              value={contact.email}
+              type="email"
+              placeholder="email"
             />
             <input
-               onChange={handleChange}
-               name="subject"
-               value={contact.subject}
-               type="text"
-               placeholder="subject"
+              onChange={handleChange}
+              name="subject"
+              value={contact.subject}
+              type="text"
+              placeholder="subject"
             />
             <textarea
-                  onChange={handleChange}
-                  name="message"
-                  value={contact.message}
-                  placeholder="Type your message here:"
+              onChange={handleChange}
+              name="message"
+              value={contact.message}
+              placeholder="Type your message here:"
             ></textarea>
-            <button className="formBtn" type="submit" name="submit" onClick={handleClick}>
+            <button
+              className="formBtn"
+              type="submit"
+              name="submit"
+              onClick={handleClick}
+            >
               Send Email
             </button>
           </form>
