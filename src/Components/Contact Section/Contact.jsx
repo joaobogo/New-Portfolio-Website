@@ -117,21 +117,21 @@ const Contact = () => {
               value={contact.name}
               type="text"
               required
-              placeholder="name:"
+              placeholder="Name:"
             />
             <input
               onChange={handleChange}
               name="email"
               value={contact.email}
               type="email"
-              placeholder="email:"
+              placeholder="Email:"
             />
             <input
               onChange={handleChange}
               name="subject"
               value={contact.subject}
               type="text"
-              placeholder="subject:"
+              placeholder="Subject:"
             />
             <textarea
               onChange={handleChange}
