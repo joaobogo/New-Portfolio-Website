@@ -30,7 +30,7 @@ const About = () => {
           </h4>
 
           <div className="aboutBtn">
-          <a  href="1KASPRZAKJOAOCVEnglish.pdf" download="1KASPRZAKJOAOCVEnglish.pdf">
+          <a  href="1JOAOKASPRZAK.pdf" download="1JOAOKASPRZAK.pdf">
               Download CV <VscCloudDownload />
             </a>
           </div>

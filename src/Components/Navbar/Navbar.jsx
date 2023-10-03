@@ -49,7 +49,7 @@ const Navbar = () => {
               <a href="#contact" className="navLink"><span className='headerNumber'>4.</span>Contact</a>
             </li>
               <button className='btn'>
-              <a  href="1KASPRZAKJOAOCVEnglish.pdf" download="1KASPRZAKJOAOCVEnglish.pdf">Resume</a>
+              <a  href="1JOAOKASPRZAK.pdf" download="1JOAOKASPRZAK.pdf">Resume</a>
               </button>
           </ul>
 
